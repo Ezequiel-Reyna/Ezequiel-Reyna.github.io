@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <title><?></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+        <img id="logo" src = "./imagenes/logo.png">
+       
+
+    </header>
+    <main>   
+        <img id="warning" src = "./imagenes/warning.png">
+    <section>
+
+    <h6>Solo letras minúsculas y sin acentos</h6>
+    <div>
+        <button id="encriptar" class="encriptar"  type="button">ㅤㅤㅤㅤㅤㅤEncriptar</button> 
+    <button id="desencriptar" class="desencriptar" type="button">ㅤㅤㅤㅤㅤDesencriptar</button>
+    </div>
+    </section>
+
+    <section id="texto">
+        <textarea placeholder="Ingrese el texto aquí" type = "text" class="input-text-area" id="text-area" minlength="1"
+        rows="4" cols="37" maxlength="none" onkeypress="return soloLetras(event); required"></textarea> 
+        
+
+
+              <div id="inicial">
+                <img src="imagenes/desencriptarpanel.png" alt="Muñeco" class="img-derecha">
+              </div>
+              <div id="final">
+                <textarea id="parrafo" readonly>
+                </textarea>
+                <button id="copiar" class="copiar">Copiar</button>
+              </div>
+
+    </section>    
+</main>    
+</body>
+<script src="js/encriptar-desencriptar.js"></script>
+<script src="js/btncopiar.js"></script>
+<script src="js/minusculas.js"></script>
+</html>
